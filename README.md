@@ -1,1 +1,1 @@
-# OMR-Checker-Demo
+# OMR-Checker-DEMO
