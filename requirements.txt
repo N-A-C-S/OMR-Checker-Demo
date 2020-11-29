@@ -1,0 +1,5 @@
+opencv-python
+numpy
+Image
+imutils
+Pillow
