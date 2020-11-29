@@ -4,8 +4,7 @@ import util
 import imutils
 from PIL import Image
 
-def result(path):
-    img = cv2.imread(path)
+def result(img):
     width = 700
     height = 700
     img = cv2.resize(img,(width,height))
