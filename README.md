@@ -20,7 +20,22 @@
 ## How to run the App
 
 - Install python3 from <a href="https://www.python.org/downloads/">here</a> and add python to path
-- Open CMD( or bash) and type :
+- Clone this repo in your local machine using the command
 ```shell
-pip install -r requirements.txt
+git clone https://github.com/N-A-C-S/OMR-Checker-Demo.git
 ```
+- Traverse into the project directory
+```shell
+cd OMR-Checker-Demo
+```
+- Install required libraries
+```shell
+pip install requirements.txt
+```
+- Run the app
+```
+streamlit run main.py
+```
+
+## Demo
+<img src="images/demo.gif" width="60%">
