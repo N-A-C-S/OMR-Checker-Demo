@@ -56,7 +56,6 @@ git checkout <your feature>
 ```
 - Now write some code and create a pull request 🙂
 
-### Saurabh delete this line
 
 <h3 align="center">Made by NACS</h3>
            
