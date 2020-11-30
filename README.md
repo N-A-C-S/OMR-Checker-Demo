@@ -39,3 +39,8 @@ streamlit run main.py
 
 ## Demo
 <img src="images/demo.gif" width="60%">
+
+
+<center>
+  <img src="images/demo.gif" width="20%">
+</center>
