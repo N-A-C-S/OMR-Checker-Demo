@@ -3,3 +3,4 @@ numpy==1.18.5
 imutils==0.5.3
 Pillow==8.0.1
 streamlit==0.71.0
+opencv-contrib-python==4.4.0.46
