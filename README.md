@@ -41,7 +41,8 @@ streamlit run main.py
 <img src="images/demo.gif" width="60%">
 
 
-<h3 align="center>Made by NACS</h3>
+<h3 align="center">Made by NACS</h3>
+           
 <p align="center">
   <img src="images/NACS.png" width="20%">
 </p>
