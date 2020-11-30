@@ -42,5 +42,5 @@ streamlit run main.py
 
 
 <center>
-  <img src="images/demo.gif" width="20%">
+  <img src="images/NACS.png" width="20%">
 </center>
