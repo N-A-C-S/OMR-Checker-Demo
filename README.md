@@ -44,5 +44,7 @@ streamlit run main.py
 <h3 align="center">Made by NACS</h3>
            
 <p align="center">
-  <img src="images/NACS.png" width="20%">
+  <img src="images/NACS.png" width="10%">
 </p>
+
+<h3 align="center"><a href="https://github.com/N-A-C-S/OMR-Checker-Demo/blob/main/LICENSE">license</a></h3>
