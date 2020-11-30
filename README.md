@@ -40,7 +40,8 @@ streamlit run main.py
 ## Demo
 <img src="images/demo.gif" width="60%">
 
+### Made by NACS
 
-<center>
+<p align="center">
   <img src="images/NACS.png" width="20%">
-</center>
+</p>
