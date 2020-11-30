@@ -19,4 +19,8 @@
 
 ## How to run the App
 
-- install python3 from <a href="https://www.python.org/downloads/">here</a> and add python to path
+- Install python3 from <a href="https://www.python.org/downloads/">here</a> and add python to path
+- Open CMD( or bash) and type :
+```shell
+pip install -r requirements.txt
+```
