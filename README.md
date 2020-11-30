@@ -40,6 +40,22 @@ streamlit run main.py
 ## Demo
 <img src="images/demo.gif" width="60%">
 
+## Contributing to the project
+- Clone the Repo
+```shell
+git clone https://github.com/N-A-C-S/OMR-Checker-Demo.git
+```
+- Move into the repo
+```shell
+cd OMR-Checker-Demo
+```
+- Create a new branch
+```shell
+git branch <your feature>
+git checkout <your feature>
+```
+- Now write some code and create a pull request 🙂
+
 
 <h3 align="center">Made by NACS</h3>
            
@@ -47,4 +63,4 @@ streamlit run main.py
   <img src="images/NACS.png" width="10%">
 </p>
 
-<h3 align="center"><a href="https://github.com/N-A-C-S/OMR-Checker-Demo/blob/main/LICENSE">license</a></h3>
+<h5 align="center"><a href="https://github.com/N-A-C-S/OMR-Checker-Demo/blob/main/LICENSE">license</a></h5>
