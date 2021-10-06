@@ -3,9 +3,10 @@ import cv2
 import streamlit  as st
 import PIL.Image
 import numpy as np
+import re
 from PIL import Image
 
-correct_answer = ["a","b","b","c","a","b","a","b","a","c","b","c","a","b","d","d","d","a","b","c"]
+#correct_answer = ["a","b","b","c","a","b","a","b","a","c","b","c","a","b","d","d","d","a","b","c"]
 
 #st.markdown('<style>body{background-color:coral;}</style>',unsafe_allow_html=True)
 
@@ -36,32 +37,35 @@ if ch == "Home":
 
     
     st.markdown('<center><h3>SAMPLE IMAGES<h3></center>',unsafe_allow_html=True)
-    image = Image.open('data/test1.jpeg')
+    image = Image.open('sam2.jpeg')
     st.image(image, use_column_width=True)
 
 elif ch == "OMR CHECKER":
     st.markdown('<center><h3>OMR-CHECKER<h3></center>',unsafe_allow_html=True)
     uploaded_image = st.file_uploader("Upload an OMR Sheet", type = ["png","jpeg","jpg"])
 
-    
-    
+    collect_answers = lambda x : [str(i) for i in  re.split("[^a-z]",x) if i != ""]
+    fixed_ans = st.multiselect("Please Select corrext Answers in order ",['a','b','c','d']*30) 
     if uploaded_image is not None:
         image = PIL.Image.open(uploaded_image).convert("RGB")
         img_array = np.array(image)
         enrollment_no,test_id,answer_list = result(img_array)
-        right = 0
-        wrong = 0
-        unattempted = 0
-        for i in range(20):
-            if answer_list[i]==correct_answer[i]:
-                right +=1
-            elif answer_list[i]==" ":
-                unattempted+=1
-            else:
-                wrong+=1
         
         st.info("Enrollment Number : "+enrollment_no)
         st.info("Test ID           : "+str(test_id))
-        st.success("Correctly Marked  : "+str(right))
-        st.error("Wrongly Marked  : "+str(wrong))
-        st.warning("Not Marked  : "+str(unattempted))
+        if(len(fixed_ans)!=30):
+            st.write("Choose the Correct number of Options !!")
+        else:
+            right = 0
+            wrong = 0
+            unattempted = 0
+            for i in range(30):
+                if(fixed_ans[i]==answer_list[i]):
+                    right +=1
+                elif(answer_list[i]=='x'):
+                    unattempted+=1
+                else:
+                    wrong+=1
+            st.success("Correctly Marked  : "+str(right))
+            st.error("Wrongly Marked  : "+str(wrong))
+            st.warning("Not Marked  : "+str(unattempted))
